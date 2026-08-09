@@ -1,4 +1,3 @@
-"use strict";
 
 function renderLandingStatistics() {
   var projectCount = document.getElementById("projectCount");
@@ -93,7 +92,7 @@ function renderAvailableUnitPreview() {
           '<article class="unit-card">' +
             '<div class="unit-code">' + escapeHtml(unit.unitNo) + "</div>" +
             "<h3>" + escapeHtml(unit.unitType) + "</h3>" +
-            '<p class="text-muted-custom small mb-3">Inventory ID ' + escapeHtml(unit.unitId) + "</p>" +
+            '<p class="text-muted-custom small mb-3">Unit ID ' + escapeHtml(unit.unitId) + "</p>" +
             createStatusBadge(unit.status) +
           "</article>" +
         "</div>";

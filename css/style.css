@@ -35,6 +35,13 @@ html {
   scroll-behavior: smooth;
 }
 
+#home,
+#about,
+#projects,
+#properties {
+  scroll-margin-top: 78px;
+}
+
 body {
   margin: 0;
   background: var(--page-bg);
@@ -126,6 +133,23 @@ button, input, select, textarea {
 .stat-card::after,
 .public-navbar .nav-link.active::after {
   display: none;
+}
+
+
+#about .section-kicker,
+#projects .section-kicker,
+#properties .section-kicker {
+  display: inline-block;
+  padding: 5px 10px;
+  background: var(--gold-pale);
+  color: var(--navy);
+  border-left: 4px solid var(--gold);
+}
+
+#about,
+#projects,
+#properties {
+  border-top: 1px solid #e5e5e5;
 }
 
 .section-heading {
@@ -279,8 +303,9 @@ textarea.form-control {
 }
 
 .public-navbar .nav-link {
-  padding: 8px 9px !important;
+  padding: 8px 9px 6px !important;
   color: #444;
+  border-bottom: 2px solid transparent;
   font-size: 0.9rem;
   font-weight: 600;
 }
